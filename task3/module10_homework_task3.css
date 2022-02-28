@@ -1,0 +1,118 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+}
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background-color: white;
+	background-image: url(module10_homework_task3-image.png);
+	background-size: cover;
+	font: normal normal medium 'Roboto', sans-serif;
+	width: auto;
+	height: 100%;
+}
+
+
+.chat {
+	width: 30em;
+	height: 30em;
+	position: absolute;
+	top: 20%;
+	left: calc(50% - 30em / 2);
+	border:  2px solid purple;
+	background-color: #deb0b0;
+}
+
+.chat-content-wrapper {
+	display: flex;
+	flex-direction: column;
+	padding: .8em;
+}
+
+.option-wrapper {
+	display: flex;
+	justify-content: space-between;
+	padding: .8em 0;
+}
+
+.option-wrapper > input {
+	flex-basis: 50%;
+}
+
+
+
+.basic-input {
+	font-size: .8em;
+	padding: .5em;
+	border-radius: 0.17em;
+	border: 1px thin #687a6e;
+}
+
+.basic-button {
+	text-transform: uppercase;
+	font-size: .8em;
+	padding: .5em;
+	color: white;
+  border: none;
+	outline: 0;
+  border-radius: 0.17em;
+	box-shadow: 1px 1px 1px #333434;
+  overflow: hidden;
+  text-align: center;
+	cursor: pointer;
+}
+
+
+
+.basic-button.color-green {
+	background-color: #687a6e;
+}
+
+
+
+.basic-button.color-pink {
+	background-color: #a57b7c;
+}
+
+
+.dialog-wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 24em;
+	background-color: #e3e3db;
+	overflow: auto;
+	border: 2px solid purple;
+}
+
+.message {
+	max-width: 12em;
+	margin: .5em;
+	padding: .5em;
+	border-radius: .2em;
+	word-wrap: break-word; 
+	border: 1px solid #a57b7c;
+}
+
+.message.client {
+	background-color: #f5d3d1;
+	align-self: flex-end;
+}
+
+.message.server {
+	background-color: #deb0b0;
+	align-self: flex-start;
+}
+
+.message.error {
+	background-color: #e37b7c;
+	align-self: center;
+}
+
+.gl-ref {
+	color: #a57b7c;
+}
